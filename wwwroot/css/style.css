@@ -8616,23 +8616,23 @@ body {
   .colors__item {
     aspect-ratio: 3 / 1; }
     .colors__item:is(.bg-primary):nth-child(2) {
-      background-color: #cfe2ff !important; }
+      background-color: #e9dfe9 !important; }
     .colors__item:is(.bg-primary):nth-child(3) {
-      background-color: #9ec5fe !important; }
+      background-color: #d3bfd3 !important; }
     .colors__item:is(.bg-primary):nth-child(4) {
-      background-color: #6ea8fe !important; }
+      background-color: #bca0bc !important; }
     .colors__item:is(.bg-primary):nth-child(5) {
-      background-color: #3d8bfd !important; }
+      background-color: #a680a6 !important; }
     .colors__item:is(.bg-primary):nth-child(6) {
-      background-color: #0d6efd !important; }
+      background-color: #906090 !important; }
     .colors__item:is(.bg-primary):nth-child(7) {
-      background-color: #0a58ca !important; }
+      background-color: #734d73 !important; }
     .colors__item:is(.bg-primary):nth-child(8) {
-      background-color: #084298 !important; }
+      background-color: #563a56 !important; }
     .colors__item:is(.bg-primary):nth-child(9) {
-      background-color: #052c65 !important; }
+      background-color: #3a263a !important; }
     .colors__item:is(.bg-primary):last-child {
-      background-color: #031633 !important; }
+      background-color: #1d131d !important; }
     .colors__item:is(.bg-secondary):nth-child(2) {
       background-color: #f8f9fa !important; }
     .colors__item:is(.bg-secondary):nth-child(3) {

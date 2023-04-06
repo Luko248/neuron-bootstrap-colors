@@ -1,21 +1,29 @@
 @import '../../../node_modules/bootstrap/scss/functions';
 @import '../../../node_modules/bootstrap/scss/variables';
 
-// $blue: #906090;
+$custom-blue: #906090;
+$custom-blue-100: tint-color($custom-blue, 80%) !default;
+$custom-blue-200: tint-color($custom-blue, 60%) !default;
+$custom-blue-300: tint-color($custom-blue, 40%) !default;
+$custom-blue-400: tint-color($custom-blue, 20%) !default;
+$custom-blue-500: $custom-blue !default;
+$custom-blue-600: shade-color($custom-blue, 20%) !default;
+$custom-blue-700: shade-color($custom-blue, 40%) !default;
+$custom-blue-800: shade-color($custom-blue, 60%) !default;
+$custom-blue-900: shade-color($custom-blue, 80%) !default;
 
-// $custom-blues: (
-//   "blue-100": tint-color($blue, 80%),
-//   "blue-200": tint-color($blue, 60%),
-//   "blue-300": tint-color($blue, 40%),
-//   "blue-400": tint-color($blue, 20%),
-//   "blue-500": $blue,
-//   "blue-600": shade-color($blue, 20%),
-//   "blue-700": shade-color($blue, 40%),
-//   "blue-800": shade-color($blue, 60%),
-//   "blue-900": shade-color($blue, 80%)
-// );
+$custom-blues: (
+  "blue-100": $custom-blue-100,
+  "blue-200": $custom-blue-200,
+  "blue-300": $custom-blue-300,
+  "blue-400": $custom-blue-400,
+  "blue-500": $custom-blue-500,
+  "blue-600": $custom-blue-600,
+  "blue-700": $custom-blue-700,
+  "blue-800": $custom-blue-800,
+  "blue-900": $custom-blue-900
+) !default;
 
-// $blues: map-merge($blues, $custom-blues);
 
 $custom-theme-colors: (
   "primary":    #906090,
@@ -28,6 +36,7 @@ $custom-theme-colors: (
   "dark":       $dark
 );
 
+$blues: map-merge($blues, $custom-blues);
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';

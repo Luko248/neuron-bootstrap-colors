@@ -14,31 +14,31 @@
 
         &:is(.bg-primary) {
             &:nth-child(2) {
-                background-color: $blue-100 !important;
+                background-color: $custom-blue-100 !important;
             }
             &:nth-child(3) {
-                background-color: $blue-200 !important;
+                background-color: $custom-blue-200 !important;
             }
             &:nth-child(4) {
-                background-color: $blue-300 !important;
+                background-color: $custom-blue-300 !important;
             }
             &:nth-child(5) {
-                background-color: $blue-400 !important;
+                background-color: $custom-blue-400 !important;
             }
             &:nth-child(6) {
-                background-color: $blue-500 !important;
+                background-color: $custom-blue-500 !important;
             }
             &:nth-child(7) {
-                background-color: $blue-600 !important;
+                background-color: $custom-blue-600 !important;
             }
             &:nth-child(8) {
-                background-color: $blue-700 !important;
+                background-color: $custom-blue-700 !important;
             }
             &:nth-child(9) {
-                background-color: $blue-800 !important;
+                background-color: $custom-blue-800 !important;
             }
             &:last-child {
-                background-color: $blue-900 !important;
+                background-color: $custom-blue-900 !important;
             }
         }
 
