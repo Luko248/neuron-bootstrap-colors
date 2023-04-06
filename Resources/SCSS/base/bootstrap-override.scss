@@ -1,0 +1,20 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+$blue: #906090;
+
+$custom-blues: (
+  "blue-100": tint-color($blue, 80%),
+  "blue-200": tint-color($blue, 60%),
+  "blue-300": tint-color($blue, 40%),
+  "blue-400": tint-color($blue, 20%),
+  "blue-500": $blue,
+  "blue-600": shade-color($blue, 20%),
+  "blue-700": shade-color($blue, 40%),
+  "blue-800": shade-color($blue, 60%),
+  "blue-900": shade-color($blue, 80%)
+);
+
+$blues: map-merge($blues, $custom-blues);
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';

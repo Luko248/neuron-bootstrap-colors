@@ -1,0 +1,143 @@
+@import "../Base/global";
+
+@layer base{
+    h1, h2, h3, h4, h5, h6, p, ul {
+        margin: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-title;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    p, span, small{
+        font-family: $font-text;
+        font-weight: 100;
+    }
+    
+    .title{
+        --title-justify-content: flex-start;
+        --title-font-size: 4.5em;
+        --title-color: #{$color-primary};
+        --title-mg-bottom: clamp(#{$gap-xxl}, 1em, 5vh); 
+        @include flex-set(flex, row, nowrap, var(--title-gap, 0), center, var(--title-justify-content));
+        margin-bottom: var(--title-mg-bottom);
+        font-family: $font-title;
+        font-size: var(--title-font-size);
+        font-weight: 700;
+        line-height: 1.2;
+        color: var(--title-color);
+    
+        @include res-max-laptop-l{
+            --title-font-size: 2.5em;
+        }
+    
+        @include res-max-laptop-s{
+            --title-font-size: 2em;
+            --title-mg-bottom: 1em; 
+        }
+    
+        @include res-max-tablet{
+            --title-font-size: 2.5em;
+            --title-mg-bottom: #{$gap-xl}; 
+        }
+    
+        @include res-max-mobile-l{
+            --title-font-size: 2em;
+        }
+    
+        &--center{
+            --title-justify-content: center;
+        }
+    
+        &--white{
+            --title-color: #{$color-white};
+        }
+    
+        &--s{
+            --title-font-size: 2.5em;
+            --title-mg-bottom: clamp(#{$gap-l}, .8em, 5dvh); 
+
+            @include res-max-laptop-m{
+                --title-font-size: 1.6em;
+            }
+        }
+
+        &--l{
+            --title-font-size: 5.5em;
+
+            @include res-max-laptop-l{
+                --title-font-size: 4.5em;
+            }
+            
+            @include res-max-laptop-s{
+                --title-font-size: 3.5em;
+            }
+        }
+
+        &:has(>.icon){
+            --title-gap: clamp(#{$gap-m}, .5em, 2dvh);
+        }
+    
+        &:has(> span){
+            @include flex-set(inline-flex, row, nowrap, $gap-m, flex-end);
+            text-transform: uppercase;
+            span{
+                font-size: .5em;
+                font-weight: 300;
+                line-height: 1;
+                text-transform: lowercase;
+                translate: $gap-s -45%;
+            }
+        }
+    }
+    
+    .desc{
+        --mg-b: 3.5rem;
+        --desc-font-size: large;
+        margin-bottom: var(--mg-b);
+        font-family:  $font-text;
+        font-size: var(--desc-font-size);
+        line-height: 1.7;
+        color: var(--desc-color, #{$color-primary});
+        
+        @include res-max-laptop-s{
+            --desc-font-size: medium;
+        }
+    
+        @include res-max-mobile-l{
+            --mg-b: #{$gap-xxl};
+        }
+    
+        &--white{
+            --desc-color: #{$color-white};
+        }
+    
+    
+        &--no-mg{
+            --mg-b: 0;
+        }
+    
+        &--mg-s{
+            --mg-b: #{$gap-xxl};
+        }
+    
+        strong, a:not(.button), b, span{
+            font-family: inherit;
+            font-size: inherit;
+        }
+    }
+
+    ul:not([class]){
+        @include grid-columns(grid, minmax($gap-xxl, auto), $gap-m);
+        margin-block-end: $gap-l;
+        font-family: $font-text;
+        font-size: var(--list_font-size, large);
+        color: $color-font;
+    
+        @include res-max-tablet{
+            --list_font-size: medium;
+        }
+    }
+}
