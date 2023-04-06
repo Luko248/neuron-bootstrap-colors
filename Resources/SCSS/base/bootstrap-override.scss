@@ -1,20 +1,33 @@
 @import '../../../node_modules/bootstrap/scss/functions';
 @import '../../../node_modules/bootstrap/scss/variables';
 
-$blue: #906090;
+// $blue: #906090;
 
-$custom-blues: (
-  "blue-100": tint-color($blue, 80%),
-  "blue-200": tint-color($blue, 60%),
-  "blue-300": tint-color($blue, 40%),
-  "blue-400": tint-color($blue, 20%),
-  "blue-500": $blue,
-  "blue-600": shade-color($blue, 20%),
-  "blue-700": shade-color($blue, 40%),
-  "blue-800": shade-color($blue, 60%),
-  "blue-900": shade-color($blue, 80%)
+// $custom-blues: (
+//   "blue-100": tint-color($blue, 80%),
+//   "blue-200": tint-color($blue, 60%),
+//   "blue-300": tint-color($blue, 40%),
+//   "blue-400": tint-color($blue, 20%),
+//   "blue-500": $blue,
+//   "blue-600": shade-color($blue, 20%),
+//   "blue-700": shade-color($blue, 40%),
+//   "blue-800": shade-color($blue, 60%),
+//   "blue-900": shade-color($blue, 80%)
+// );
+
+// $blues: map-merge($blues, $custom-blues);
+
+$custom-theme-colors: (
+  "primary":    #906090,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
 );
 
-$blues: map-merge($blues, $custom-blues);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
