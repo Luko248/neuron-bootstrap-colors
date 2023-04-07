@@ -48,14 +48,14 @@
     "dev": "webpack --mode=development",
     "prod": "webpack --mode=production",
     "watch": "webpack --mode=development --watch",
-    "bundle:css": "npm run bundle:lightness.css && npm run bundle:darken-lighten.css && npm run bundle:bootstrap-sample.css",
+    "bundle:css": "npm run bundle:luminance.css && npm run bundle:darken-lighten.css && npm run bundle:bootstrap-sample.css",
     "bundle:bootstrap-sample.css": "npm run compile:bootstrap-sample.scss && postcss wwwroot/css/bootstrap-sample.css --config ./postcss.config.js | cleancss -o wwwroot/css/bootstrap-sample.min.css",
     "bundle:darken-lighten.css": "npm run compile:darken-lighten.scss && postcss wwwroot/css/darken-lighten.css --config ./postcss.config.js | cleancss -o wwwroot/css/darken-lighten.min.css",
-    "bundle:lightness.css": "npm run compile:lightness.scss && postcss wwwroot/css/lightness.css --config ./postcss.config.js | cleancss -o wwwroot/css/lightness.min.css",
+    "bundle:luminance.css": "npm run compile:luminance.scss && postcss wwwroot/css/luminance.css --config ./postcss.config.js | cleancss -o wwwroot/css/luminance.min.css",
     "compile:bootstrap-sample.scss": "node-sass --source-map=true Resources/SCSS/bootstrap-sample.scss wwwroot/css/bootstrap-sample.css",
     "compile:darken-lighten.scss": "node-sass --source-map=true Resources/SCSS/darken-lighten.scss wwwroot/css/darken-lighten.css",
-    "compile:lightness.scss": "node-sass --source-map=true Resources/SCSS/lightness.scss wwwroot/css/lightness.css",
-    "compile:scss": "npm run stylelint npm run compile:lightness.scss && npm run compile:darken-lighten.scss && npm run compile:bootstrap-sample.scss",
+    "compile:luminance.scss": "node-sass --source-map=true Resources/SCSS/luminance.scss wwwroot/css/luminance.css",
+    "compile:scss": "npm run stylelint npm run compile:luminance.scss && npm run compile:darken-lighten.scss && npm run compile:bootstrap-sample.scss",
     "stylelint": "stylelint --fix Resources/SCSS/**/*.scss --custom-syntax postcss-scss",
     "watch:scss": "npm run bundle:css & watch \"npm run bundle:css\" Resources/SCSS"
   }

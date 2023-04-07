@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "lightness.css",
+	"file": "luminance.css",
 	"sources": [
-		"../../Resources/SCSS/lightness.scss",
+		"../../Resources/SCSS/luminance.scss",
 		"../../Resources/SCSS/base/root.scss",
 		"../../Resources/SCSS/base/_variables.scss",
 		"../../Resources/SCSS/base/_mixins.scss",
@@ -16,7 +16,7 @@
 		"../../Resources/SCSS/base/Mixins/_transition.scss",
 		"../../Resources/SCSS/base/classes.scss",
 		"../../Resources/SCSS/base/default.scss",
-		"../../Resources/SCSS/base/lightness-colors.scss",
+		"../../Resources/SCSS/base/luminance-colors.scss",
 		"../../Resources/SCSS/base/_global.scss",
 		"../../Resources/SCSS/base/_functions.scss",
 		"../../node_modules/bootstrap/scss/_functions.scss",
