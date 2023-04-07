@@ -9512,6 +9512,31 @@ body {
       ul:not([class]) {
         --list_font-size: medium; } } }
 
+nav {
+  position: sticky;
+  inset: 0 0 auto 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3.2rem;
+    justify-content: center;
+    list-style: none; }
+  nav a {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: #0d6efd;
+    font-size: large; }
+    nav a:hover {
+      text-decoration: underline; }
+
 .colors {
   display: grid;
   grid-template-columns: repeat(10, minmax(3.2rem, 1fr));

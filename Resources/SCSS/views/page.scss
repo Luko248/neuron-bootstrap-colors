@@ -1,5 +1,37 @@
 @import "../base/global";
 
+nav {
+    position: sticky;
+    inset: 0 0 auto 0;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px 0 $color-black--trans;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: $gap-xxl;
+        justify-content: center;
+        list-style: none;
+    }
+
+    a {
+        display: inline-block;
+        padding: 1em;
+        text-decoration: none;
+        color: $primary;
+        font-size: large;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 .colors {
     display: grid;
     grid-template-columns: repeat(10, minmax($gap-xxl, 1fr));
