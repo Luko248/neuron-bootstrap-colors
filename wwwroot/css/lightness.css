@@ -76,7 +76,9 @@
 a {
   text-decoration: none; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box; }
 
 html {
@@ -9717,4 +9719,4 @@ body {
       .colors__item:is(.bg-grey-blue):last-child {
         background-color: #191b20 !important; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=lightness.css.map */
