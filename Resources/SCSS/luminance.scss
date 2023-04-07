@@ -7,4 +7,158 @@
 @import 'base/typography';
 
 //Views
-@import 'views/page';
+
+nav {
+    position: sticky;
+    inset: 0 0 auto 0;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px 0 $color-black--trans;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: $gap-xxl;
+        justify-content: center;
+        list-style: none;
+    }
+
+    a {
+        display: inline-block;
+        padding: 1em;
+        text-decoration: none;
+        color: $primary;
+        font-size: large;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(10, minmax($gap-xxl, 1fr));
+    gap: $gap-xl;
+    padding-block: 5dvb;
+    padding-inline: 10dvi;
+
+    h1 {
+        grid-column-end: span 10;
+    }
+
+    h2 {
+        font-size: x-large;
+        order: 11;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    &__item {
+        aspect-ratio: 3 / 1;
+        padding: .4em;
+        font-size: large;
+        color: $color-white;
+        text-align: center;
+
+        &:first-of-type {
+            order: 10;
+        }
+
+        &:is(.bg-primary) {
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(148, 100%, ($i * 10%)) !important;
+                }
+            }
+        }
+
+        &:is(.bg-secondary) {
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(207, 100%, ($i * 10%)) !important;
+                }
+            }
+        }
+
+        &:is(.bg-info) {
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(192, 70%, ($i * 10%)) !important;
+                }
+            }
+        }
+
+        &:is(.bg-success) {
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(132, 46%, ($i * 10%)) !important;
+                }
+            }
+        }
+
+        &:is(.bg-warning) {
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(42, 90%, ($i * 10%)) !important;
+                }
+            }
+        }
+
+        &:is(.bg-danger) {
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(8, 73%, ($i * 10%)) !important;
+                }
+            }
+        }
+
+        &:is(.bg-orange) {
+            background-color: $color-orange !important;
+
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(29, 92%, ($i * 10%)) !important;
+                }
+            }
+        }
+
+        &:is(.bg-violet) {
+            background-color: $color-violet !important;
+
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(286, 37%, ($i * 10%)) !important;
+                }
+            }
+        }
+
+        &:is(.bg-grey) {
+            background-color: $color-grey !important;
+
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(0, 0%, ($i * 10%)) !important;
+                }
+            }
+        }
+
+
+        &:is(.bg-grey-blue) {
+            background-color: $color-grey-blue !important;
+
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i + 1}) {
+                    background-color: hsl(220, 15%, ($i * 10%)) !important;
+                }
+            }
+        }
+    }
+}

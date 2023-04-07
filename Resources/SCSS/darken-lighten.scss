@@ -6,5 +6,453 @@
 @import 'base/layout';
 @import 'base/typography';
 
-//Views
-@import 'views/page';
+
+nav {
+    position: sticky;
+    inset: 0 0 auto 0;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px 0 $color-black--trans;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: $gap-xxl;
+        justify-content: center;
+        list-style: none;
+    }
+
+    a {
+        display: inline-block;
+        padding: 1em;
+        text-decoration: none;
+        color: $primary;
+        font-size: large;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(10, minmax($gap-xxl, 1fr));
+    gap: $gap-xl;
+    padding-block: 5dvb;
+    padding-inline: 10dvi;
+
+    h1 {
+        grid-column-end: span 10;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    &__wrapper {
+        display: grid;
+    }
+
+    &__item {
+        aspect-ratio: 3 / 1;
+        padding: .4em;
+        font-size: large;
+        color: $color-white;
+        text-align: center;
+
+        &:is(.bg-primary) {
+
+            &:nth-of-type(2) {
+                background-color: $color-green-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-green-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-green-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-green-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-green-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-green-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-green-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-green-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-green-900 !important;
+            }
+        }
+
+        &:is(.bg-secondary) {
+            &:nth-of-type(2) {
+                background-color: $color-blue-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-blue-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-blue-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-blue-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-blue-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-blue-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-blue-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-blue-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-blue-900 !important;
+            }
+        }
+
+        &:is(.bg-info) {
+            &:nth-of-type(2) {
+                background-color: $color-turquoise-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-turquoise-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-turquoise-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-turquoise-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-turquoise-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-turquoise-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-turquoise-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-turquoise-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-turquoise-900 !important;
+            }
+        }
+
+        &:is(.bg-success) {
+            &:nth-of-type(2) {
+                background-color: $color-warm-green-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-warm-green-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-warm-green-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-warm-green-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-warm-green-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-warm-green-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-warm-green-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-warm-green-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-warm-green-900 !important;
+            }
+        }
+
+        &:is(.bg-warning) {
+            &:nth-of-type(2) {
+                background-color: $color-yellow-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-yellow-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-yellow-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-yellow-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-yellow-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-yellow-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-yellow-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-yellow-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-yellow-900 !important;
+            }
+        }
+
+        &:is(.bg-danger) {
+            &:nth-of-type(2) {
+                background-color: $color-red-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-red-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-red-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-red-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-red-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-red-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-red-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-red-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-red-900 !important;
+            }
+        }
+
+        &:is(.bg-orange) {
+            background-color: $color-orange !important;
+
+            &:nth-of-type(2) {
+                background-color: $color-orange-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-orange-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-orange-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-orange-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-orange-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-orange-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-orange-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-orange-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-orange-900 !important;
+            }
+        }
+
+        &:is(.bg-violet) {
+            background-color: $color-violet !important;
+
+            &:nth-of-type(2) {
+                background-color: $color-violet-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-violet-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-violet-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-violet-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-violet-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-violet-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-violet-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-violet-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-violet-900 !important;
+            }
+        }
+
+        &:is(.bg-grey) {
+            background-color: $color-grey !important;
+
+            &:nth-of-type(2) {
+                background-color: $color-grey-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-grey-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-grey-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-grey-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-grey-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-grey-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-grey-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-grey-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-grey-900 !important;
+            }
+        }
+
+
+        &:is(.bg-grey-blue) {
+            background-color: $color-grey-blue !important;
+
+            &:nth-of-type(2) {
+                background-color: $color-grey-blue-100 !important;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-grey-blue-200 !important;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-grey-blue-300 !important;
+            }
+
+            &:nth-of-type(5) {
+                background-color: $color-grey-blue-400 !important;
+            }
+
+            &:nth-of-type(6) {
+                background-color: $color-grey-blue-500 !important;
+            }
+
+            &:nth-of-type(7) {
+                background-color: $color-grey-blue-600 !important;
+            }
+
+            &:nth-of-type(8) {
+                background-color: $color-grey-blue-700 !important;
+            }
+
+            &:nth-of-type(9) {
+                background-color: $color-grey-blue-800 !important;
+            }
+
+            &:last-child {
+                background-color: $color-grey-blue-900 !important;
+            }
+        }
+    }
+}

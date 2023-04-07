@@ -9546,202 +9546,226 @@ nav {
   .colors h1, .colors .h1 {
     grid-column-end: span 10; }
   .colors h2, .colors .h2 {
-    font-size: x-large; }
+    font-size: x-large;
+    order: 11; }
   .colors__wrapper {
-    display: grid; }
+    display: flex;
+    flex-flow: column-reverse; }
   .colors__item {
     aspect-ratio: 3 / 1;
     padding: .4em;
     font-size: large;
     color: white;
     text-align: center; }
+    .colors__item:first-of-type {
+      order: 10; }
     .colors__item:is(.bg-primary):nth-of-type(2) {
-      background-color: #cce7d8 !important; }
+      background-color: #003318 !important; }
     .colors__item:is(.bg-primary):nth-of-type(3) {
-      background-color: #99ceb2 !important; }
+      background-color: #006630 !important; }
     .colors__item:is(.bg-primary):nth-of-type(4) {
-      background-color: #66b68b !important; }
+      background-color: #009947 !important; }
     .colors__item:is(.bg-primary):nth-of-type(5) {
-      background-color: #339d65 !important; }
+      background-color: #00cc5f !important; }
     .colors__item:is(.bg-primary):nth-of-type(6) {
-      background-color: #00853e !important; }
+      background-color: #00ff77 !important; }
     .colors__item:is(.bg-primary):nth-of-type(7) {
-      background-color: #006a32 !important; }
+      background-color: #33ff92 !important; }
     .colors__item:is(.bg-primary):nth-of-type(8) {
-      background-color: #005025 !important; }
+      background-color: #66ffad !important; }
     .colors__item:is(.bg-primary):nth-of-type(9) {
-      background-color: #003519 !important; }
-    .colors__item:is(.bg-primary):last-child {
-      background-color: #001b0c !important; }
+      background-color: #99ffc9 !important; }
+    .colors__item:is(.bg-primary):nth-of-type(10) {
+      background-color: #ccffe4 !important; }
+    .colors__item:is(.bg-primary):nth-of-type(11) {
+      background-color: white !important; }
     .colors__item:is(.bg-secondary):nth-of-type(2) {
-      background-color: #ccdce9 !important; }
+      background-color: #001c33 !important; }
     .colors__item:is(.bg-secondary):nth-of-type(3) {
-      background-color: #99b8d2 !important; }
+      background-color: #003866 !important; }
     .colors__item:is(.bg-secondary):nth-of-type(4) {
-      background-color: #6695bc !important; }
+      background-color: #005499 !important; }
     .colors__item:is(.bg-secondary):nth-of-type(5) {
-      background-color: #3372a5 !important; }
+      background-color: #0070cc !important; }
     .colors__item:is(.bg-secondary):nth-of-type(6) {
-      background-color: #004f8f !important; }
+      background-color: #008cff !important; }
     .colors__item:is(.bg-secondary):nth-of-type(7) {
-      background-color: #003f72 !important; }
+      background-color: #33a3ff !important; }
     .colors__item:is(.bg-secondary):nth-of-type(8) {
-      background-color: #002f56 !important; }
+      background-color: #66baff !important; }
     .colors__item:is(.bg-secondary):nth-of-type(9) {
-      background-color: #001f39 !important; }
-    .colors__item:is(.bg-secondary):last-child {
-      background-color: #00101d !important; }
+      background-color: #99d1ff !important; }
+    .colors__item:is(.bg-secondary):nth-of-type(10) {
+      background-color: #cce8ff !important; }
+    .colors__item:is(.bg-secondary):nth-of-type(11) {
+      background-color: white !important; }
     .colors__item:is(.bg-info):nth-of-type(2) {
-      background-color: #dbf3f9 !important; }
+      background-color: #08242b !important; }
     .colors__item:is(.bg-info):nth-of-type(3) {
-      background-color: #b8e7f2 !important; }
+      background-color: #0f4857 !important; }
     .colors__item:is(.bg-info):nth-of-type(4) {
-      background-color: #94dbec !important; }
+      background-color: #176d82 !important; }
     .colors__item:is(.bg-info):nth-of-type(5) {
-      background-color: #71cee6 !important; }
+      background-color: #1f91ad !important; }
     .colors__item:is(.bg-info):nth-of-type(6) {
-      background-color: #4dc2e0 !important; }
+      background-color: #26b5d9 !important; }
     .colors__item:is(.bg-info):nth-of-type(7) {
-      background-color: #3e9bb3 !important; }
+      background-color: #52c4e0 !important; }
     .colors__item:is(.bg-info):nth-of-type(8) {
-      background-color: #2e7586 !important; }
+      background-color: #7dd3e8 !important; }
     .colors__item:is(.bg-info):nth-of-type(9) {
-      background-color: #1f4e59 !important; }
-    .colors__item:is(.bg-info):last-child {
-      background-color: #0f272d !important; }
+      background-color: #a8e1f0 !important; }
+    .colors__item:is(.bg-info):nth-of-type(10) {
+      background-color: #d4f0f7 !important; }
+    .colors__item:is(.bg-info):nth-of-type(11) {
+      background-color: white !important; }
     .colors__item:is(.bg-success):nth-of-type(2) {
-      background-color: #e6f6ea !important; }
+      background-color: #0e2512 !important; }
     .colors__item:is(.bg-success):nth-of-type(3) {
-      background-color: #ceedd4 !important; }
+      background-color: #1c4a25 !important; }
     .colors__item:is(.bg-success):nth-of-type(4) {
-      background-color: #b5e4bf !important; }
+      background-color: #297037 !important; }
     .colors__item:is(.bg-success):nth-of-type(5) {
-      background-color: #9ddba9 !important; }
+      background-color: #37954a !important; }
     .colors__item:is(.bg-success):nth-of-type(6) {
-      background-color: #84d294 !important; }
+      background-color: #45ba5c !important; }
     .colors__item:is(.bg-success):nth-of-type(7) {
-      background-color: #6aa876 !important; }
+      background-color: #6ac87d !important; }
     .colors__item:is(.bg-success):nth-of-type(8) {
-      background-color: #4f7e59 !important; }
+      background-color: #8fd69d !important; }
     .colors__item:is(.bg-success):nth-of-type(9) {
-      background-color: #35543b !important; }
-    .colors__item:is(.bg-success):last-child {
-      background-color: #1a2a1e !important; }
+      background-color: #b5e3be !important; }
+    .colors__item:is(.bg-success):nth-of-type(10) {
+      background-color: #daf1de !important; }
+    .colors__item:is(.bg-success):nth-of-type(11) {
+      background-color: white !important; }
     .colors__item:is(.bg-warning):nth-of-type(2) {
-      background-color: #fdf0d2 !important; }
+      background-color: #302303 !important; }
     .colors__item:is(.bg-warning):nth-of-type(3) {
-      background-color: #fae1a6 !important; }
+      background-color: #614505 !important; }
     .colors__item:is(.bg-warning):nth-of-type(4) {
-      background-color: #f8d279 !important; }
+      background-color: #916808 !important; }
     .colors__item:is(.bg-warning):nth-of-type(5) {
-      background-color: #f6c34d !important; }
+      background-color: #c28b0a !important; }
     .colors__item:is(.bg-warning):nth-of-type(6) {
-      background-color: #f3b420 !important; }
+      background-color: #f2ad0d !important; }
     .colors__item:is(.bg-warning):nth-of-type(7) {
-      background-color: #c3901a !important; }
+      background-color: #f5be3d !important; }
     .colors__item:is(.bg-warning):nth-of-type(8) {
-      background-color: #926c13 !important; }
+      background-color: #f7ce6e !important; }
     .colors__item:is(.bg-warning):nth-of-type(9) {
-      background-color: #61480d !important; }
-    .colors__item:is(.bg-warning):last-child {
-      background-color: #312406 !important; }
+      background-color: #fade9e !important; }
+    .colors__item:is(.bg-warning):nth-of-type(10) {
+      background-color: #fcefcf !important; }
+    .colors__item:is(.bg-warning):nth-of-type(11) {
+      background-color: white !important; }
     .colors__item:is(.bg-danger):nth-of-type(2) {
-      background-color: #f9dcd7 !important; }
+      background-color: #2c0c07 !important; }
     .colors__item:is(.bg-danger):nth-of-type(3) {
-      background-color: #f3b9b0 !important; }
+      background-color: #58180e !important; }
     .colors__item:is(.bg-danger):nth-of-type(4) {
-      background-color: #ec9588 !important; }
+      background-color: #842415 !important; }
     .colors__item:is(.bg-danger):nth-of-type(5) {
-      background-color: #e67260 !important; }
+      background-color: #b02f1c !important; }
     .colors__item:is(.bg-danger):nth-of-type(6) {
-      background-color: #e04f38 !important; }
+      background-color: #dd3b22 !important; }
     .colors__item:is(.bg-danger):nth-of-type(7) {
-      background-color: #b33f2d !important; }
+      background-color: #e3624f !important; }
     .colors__item:is(.bg-danger):nth-of-type(8) {
-      background-color: #862f22 !important; }
+      background-color: #ea8a7b !important; }
     .colors__item:is(.bg-danger):nth-of-type(9) {
-      background-color: #5a2017 !important; }
-    .colors__item:is(.bg-danger):last-child {
-      background-color: #2d100b !important; }
+      background-color: #f1b1a7 !important; }
+    .colors__item:is(.bg-danger):nth-of-type(10) {
+      background-color: #f8d8d3 !important; }
+    .colors__item:is(.bg-danger):nth-of-type(11) {
+      background-color: white !important; }
     .colors__item:is(.bg-orange) {
       background-color: #f68e2c !important; }
       .colors__item:is(.bg-orange):nth-of-type(2) {
-        background-color: #fde8d5 !important; }
+        background-color: #311902 !important; }
       .colors__item:is(.bg-orange):nth-of-type(3) {
-        background-color: #fbd2ab !important; }
+        background-color: #623104 !important; }
       .colors__item:is(.bg-orange):nth-of-type(4) {
-        background-color: #fabb81 !important; }
+        background-color: #934a06 !important; }
       .colors__item:is(.bg-orange):nth-of-type(5) {
-        background-color: #f8a557 !important; }
+        background-color: #c46308 !important; }
       .colors__item:is(.bg-orange):nth-of-type(6) {
-        background-color: #f68e2c !important; }
+        background-color: #f57c0a !important; }
       .colors__item:is(.bg-orange):nth-of-type(7) {
-        background-color: #c57224 !important; }
+        background-color: #f7963b !important; }
       .colors__item:is(.bg-orange):nth-of-type(8) {
-        background-color: #94551b !important; }
+        background-color: #f9b06c !important; }
       .colors__item:is(.bg-orange):nth-of-type(9) {
-        background-color: #623912 !important; }
-      .colors__item:is(.bg-orange):last-child {
-        background-color: #311c09 !important; }
+        background-color: #fbca9d !important; }
+      .colors__item:is(.bg-orange):nth-of-type(10) {
+        background-color: #fde5ce !important; }
+      .colors__item:is(.bg-orange):nth-of-type(11) {
+        background-color: white !important; }
     .colors__item:is(.bg-violet) {
       background-color: #a15eb5 !important; }
       .colors__item:is(.bg-violet):nth-of-type(2) {
-        background-color: #ecdff0 !important; }
+        background-color: #1f1023 !important; }
       .colors__item:is(.bg-violet):nth-of-type(3) {
-        background-color: #d9bfe1 !important; }
+        background-color: #3d2046 !important; }
       .colors__item:is(.bg-violet):nth-of-type(4) {
-        background-color: #c79fd3 !important; }
+        background-color: #5c3069 !important; }
       .colors__item:is(.bg-violet):nth-of-type(5) {
-        background-color: #b47ec4 !important; }
+        background-color: #7a408c !important; }
       .colors__item:is(.bg-violet):nth-of-type(6) {
-        background-color: #a15eb5 !important; }
+        background-color: #9950af !important; }
       .colors__item:is(.bg-violet):nth-of-type(7) {
-        background-color: #814b91 !important; }
+        background-color: #ad73bf !important; }
       .colors__item:is(.bg-violet):nth-of-type(8) {
-        background-color: #61396d !important; }
+        background-color: #c296cf !important; }
       .colors__item:is(.bg-violet):nth-of-type(9) {
-        background-color: #402648 !important; }
-      .colors__item:is(.bg-violet):last-child {
-        background-color: #201324 !important; }
+        background-color: #d6b9df !important; }
+      .colors__item:is(.bg-violet):nth-of-type(10) {
+        background-color: #ebdcef !important; }
+      .colors__item:is(.bg-violet):nth-of-type(11) {
+        background-color: white !important; }
     .colors__item:is(.bg-grey) {
       background-color: #999999 !important; }
       .colors__item:is(.bg-grey):nth-of-type(2) {
-        background-color: #ebebeb !important; }
+        background-color: #1a1a1a !important; }
       .colors__item:is(.bg-grey):nth-of-type(3) {
-        background-color: #d6d6d6 !important; }
+        background-color: #333333 !important; }
       .colors__item:is(.bg-grey):nth-of-type(4) {
-        background-color: #c2c2c2 !important; }
+        background-color: #4d4d4d !important; }
       .colors__item:is(.bg-grey):nth-of-type(5) {
-        background-color: #adadad !important; }
+        background-color: #666666 !important; }
       .colors__item:is(.bg-grey):nth-of-type(6) {
-        background-color: #999999 !important; }
+        background-color: gray !important; }
       .colors__item:is(.bg-grey):nth-of-type(7) {
-        background-color: #7a7a7a !important; }
+        background-color: #999999 !important; }
       .colors__item:is(.bg-grey):nth-of-type(8) {
-        background-color: #5c5c5c !important; }
+        background-color: #b3b3b3 !important; }
       .colors__item:is(.bg-grey):nth-of-type(9) {
-        background-color: #3d3d3d !important; }
-      .colors__item:is(.bg-grey):last-child {
-        background-color: #1f1f1f !important; }
+        background-color: #cccccc !important; }
+      .colors__item:is(.bg-grey):nth-of-type(10) {
+        background-color: #e6e6e6 !important; }
+      .colors__item:is(.bg-grey):nth-of-type(11) {
+        background-color: white !important; }
     .colors__item:is(.bg-grey-blue) {
       background-color: #7e89a0 !important; }
       .colors__item:is(.bg-grey-blue):nth-of-type(2) {
-        background-color: #e5e7ec !important; }
+        background-color: #16181d !important; }
       .colors__item:is(.bg-grey-blue):nth-of-type(3) {
-        background-color: #cbd0d9 !important; }
+        background-color: #2b303b !important; }
       .colors__item:is(.bg-grey-blue):nth-of-type(4) {
-        background-color: #b2b8c6 !important; }
+        background-color: #414958 !important; }
       .colors__item:is(.bg-grey-blue):nth-of-type(5) {
-        background-color: #98a1b3 !important; }
+        background-color: #576175 !important; }
       .colors__item:is(.bg-grey-blue):nth-of-type(6) {
-        background-color: #7e89a0 !important; }
+        background-color: #6c7993 !important; }
       .colors__item:is(.bg-grey-blue):nth-of-type(7) {
-        background-color: #656e80 !important; }
+        background-color: #8a94a8 !important; }
       .colors__item:is(.bg-grey-blue):nth-of-type(8) {
-        background-color: #4c5260 !important; }
+        background-color: #a7afbe !important; }
       .colors__item:is(.bg-grey-blue):nth-of-type(9) {
-        background-color: #323740 !important; }
-      .colors__item:is(.bg-grey-blue):last-child {
-        background-color: #191b20 !important; }
+        background-color: #c4c9d4 !important; }
+      .colors__item:is(.bg-grey-blue):nth-of-type(10) {
+        background-color: #e2e4e9 !important; }
+      .colors__item:is(.bg-grey-blue):nth-of-type(11) {
+        background-color: white !important; }
 
 /*# sourceMappingURL=luminance.css.map */
