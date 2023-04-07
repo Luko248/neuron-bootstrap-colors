@@ -1,42 +1,119 @@
+@import "global";
 @import '../../../node_modules/bootstrap/scss/functions';
 @import '../../../node_modules/bootstrap/scss/variables';
 
-$custom-blue: #906090;
-$custom-blue-100: tint-color($custom-blue, 80%) !default;
-$custom-blue-200: tint-color($custom-blue, 60%) !default;
-$custom-blue-300: tint-color($custom-blue, 40%) !default;
-$custom-blue-400: tint-color($custom-blue, 20%) !default;
-$custom-blue-500: $custom-blue !default;
-$custom-blue-600: shade-color($custom-blue, 20%) !default;
-$custom-blue-700: shade-color($custom-blue, 40%) !default;
-$custom-blue-800: shade-color($custom-blue, 60%) !default;
-$custom-blue-900: shade-color($custom-blue, 80%) !default;
-
-$custom-blues: (
-  "blue-100": $custom-blue-100,
-  "blue-200": $custom-blue-200,
-  "blue-300": $custom-blue-300,
-  "blue-400": $custom-blue-400,
-  "blue-500": $custom-blue-500,
-  "blue-600": $custom-blue-600,
-  "blue-700": $custom-blue-700,
-  "blue-800": $custom-blue-800,
-  "blue-900": $custom-blue-900
-) !default;
+//green
+$color-green-100: tint-color($color-green, 80%);
+$color-green-200: tint-color($color-green, 60%);
+$color-green-300: tint-color($color-green, 40%);
+$color-green-400: tint-color($color-green, 20%);
+$color-green-500: $color-green;
+$color-green-600: shade-color($color-green, 20%);
+$color-green-700: shade-color($color-green, 40%);
+$color-green-800: shade-color($color-green, 60%);
+$color-green-900: shade-color($color-green, 80%);
+//grey
+$color-grey-100: tint-color($color-grey, 80%);
+$color-grey-200: tint-color($color-grey, 60%);
+$color-grey-300: tint-color($color-grey, 40%);
+$color-grey-400: tint-color($color-grey, 20%);
+$color-grey-500: $color-grey;
+$color-grey-600: shade-color($color-grey, 20%);
+$color-grey-700: shade-color($color-grey, 40%);
+$color-grey-800: shade-color($color-grey, 60%);
+$color-grey-900: shade-color($color-grey, 80%);
+//red
+$color-red-100: tint-color($color-red, 80%);
+$color-red-200: tint-color($color-red, 60%);
+$color-red-300: tint-color($color-red, 40%);
+$color-red-400: tint-color($color-red, 20%);
+$color-red-500: $color-red;
+$color-red-600: shade-color($color-red, 20%);
+$color-red-700: shade-color($color-red, 40%);
+$color-red-800: shade-color($color-red, 60%);
+$color-red-900: shade-color($color-red, 80%);
+//yellow
+$color-yellow-100: tint-color($color-yellow, 80%);
+$color-yellow-200: tint-color($color-yellow, 60%);
+$color-yellow-300: tint-color($color-yellow, 40%);
+$color-yellow-400: tint-color($color-yellow, 20%);
+$color-yellow-500: $color-yellow;
+$color-yellow-600: shade-color($color-yellow, 20%);
+$color-yellow-700: shade-color($color-yellow, 40%);
+$color-yellow-800: shade-color($color-yellow, 60%);
+$color-yellow-900: shade-color($color-yellow, 80%);
+//orange
+$color-orange-100: tint-color($color-orange, 80%);
+$color-orange-200: tint-color($color-orange, 60%);
+$color-orange-300: tint-color($color-orange, 40%);
+$color-orange-400: tint-color($color-orange, 20%);
+$color-orange-500: $color-orange;
+$color-orange-600: shade-color($color-orange, 20%);
+$color-orange-700: shade-color($color-orange, 40%);
+$color-orange-800: shade-color($color-orange, 60%);
+$color-orange-900: shade-color($color-orange, 80%);
+//blue
+$color-blue-100: tint-color($color-blue, 80%);
+$color-blue-200: tint-color($color-blue, 60%);
+$color-blue-300: tint-color($color-blue, 40%);
+$color-blue-400: tint-color($color-blue, 20%);
+$color-blue-500: $color-blue;
+$color-blue-600: shade-color($color-blue, 20%);
+$color-blue-700: shade-color($color-blue, 40%);
+$color-blue-800: shade-color($color-blue, 60%);
+$color-blue-900: shade-color($color-blue, 80%);
+//violet
+$color-violet-100: tint-color($color-violet, 80%);
+$color-violet-200: tint-color($color-violet, 60%);
+$color-violet-300: tint-color($color-violet, 40%);
+$color-violet-400: tint-color($color-violet, 20%);
+$color-violet-500: $color-violet;
+$color-violet-600: shade-color($color-violet, 20%);
+$color-violet-700: shade-color($color-violet, 40%);
+$color-violet-800: shade-color($color-violet, 60%);
+$color-violet-900: shade-color($color-violet, 80%);
+//turquoise
+$color-turquoise-100: tint-color($color-turquoise, 80%);
+$color-turquoise-200: tint-color($color-turquoise, 60%);
+$color-turquoise-300: tint-color($color-turquoise, 40%);
+$color-turquoise-400: tint-color($color-turquoise, 20%);
+$color-turquoise-500: $color-turquoise;
+$color-turquoise-600: shade-color($color-turquoise, 20%);
+$color-turquoise-700: shade-color($color-turquoise, 40%);
+$color-turquoise-800: shade-color($color-turquoise, 60%);
+$color-turquoise-900: shade-color($color-turquoise, 80%);
+//warm-green
+$color-warm-green-100: tint-color($color-warm-green, 80%);
+$color-warm-green-200: tint-color($color-warm-green, 60%);
+$color-warm-green-300: tint-color($color-warm-green, 40%);
+$color-warm-green-400: tint-color($color-warm-green, 20%);
+$color-warm-green-500: $color-warm-green;
+$color-warm-green-600: shade-color($color-warm-green, 20%);
+$color-warm-green-700: shade-color($color-warm-green, 40%);
+$color-warm-green-800: shade-color($color-warm-green, 60%);
+$color-warm-green-900: shade-color($color-warm-green, 80%);
+//grey-blue
+$color-grey-blue-100: tint-color($color-grey-blue, 80%);
+$color-grey-blue-200: tint-color($color-grey-blue, 60%);
+$color-grey-blue-300: tint-color($color-grey-blue, 40%);
+$color-grey-blue-400: tint-color($color-grey-blue, 20%);
+$color-grey-blue-500: $color-grey-blue;
+$color-grey-blue-600: shade-color($color-grey-blue, 20%);
+$color-grey-blue-700: shade-color($color-grey-blue, 40%);
+$color-grey-blue-800: shade-color($color-grey-blue, 60%);
+$color-grey-blue-900: shade-color($color-grey-blue, 80%);
 
 
 $custom-theme-colors: (
-  "primary":    #906090,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+    "primary": $color-green,
+    "secondary": $color-blue,
+    "success": $color-warm-green,
+    "info": $color-turquoise,
+    "warning": $color-yellow,
+    "danger": $color-red,
+    "dark": $color-grey
 );
 
-$blues: map-merge($blues, $custom-blues);
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
